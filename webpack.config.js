@@ -19,7 +19,7 @@ module.exports = {
       path.resolve('./'),
       path.resolve('./node_modules'),
     ],
-    extensions: ['.js','.scss','.xml','.json'],
+    extensions: ['.js','.scss'],
   },
   output: {
     path: path.join(__dirname, '/dist'),
