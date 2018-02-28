@@ -10,8 +10,8 @@ function App({ name }) {
   );
 };
 
-App.propTypes ={
-               name: PropTypes.string,
-               };
+App.propTypes = {
+  name: PropTypes.string,
+};
 
 export default App;
