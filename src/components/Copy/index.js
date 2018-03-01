@@ -15,3 +15,5 @@ class Copy extends React.Component {
 Copy.propTypes = {
   children: PropTypes.element.isRequired
 };
+
+export default Copy;
