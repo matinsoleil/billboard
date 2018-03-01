@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/share/yarn/bin/yarn.js review
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js start
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
@@ -6325,7 +6325,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c npm run lint && npm test
+  Arguments: -c npm run build && NODE_ENV=production node server.js
   Directory: /var/www/react
   Output:
   
