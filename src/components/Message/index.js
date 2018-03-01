@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 import 'src/assets/stylesheets/base.scss';
 
-function Warning({error}){
+function Warning ({error}){
     return (<a>there are a {error}</a>);
 }
 
-Warning.propTypes = { error: PropTypes.string,};
+//Warning.propTypes = { error: PropTypes.string,};
 
 
 function Message({ name }) {
@@ -16,8 +16,11 @@ function Message({ name }) {
   );
 };
 
-Message.propTypes = {
-  name: PropTypes.string,
-};
+//Message.propTypes = {
+//  name: PropTypes.string,
+//};
 
-export default Message;
+export default propTypes:{
+                         Warning:{error: PropTypes.string},
+                         Message:{name: PropTypes.string}
+                         };
