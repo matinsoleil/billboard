@@ -3,7 +3,9 @@ import { render } from 'react-dom';
 import App from './components/App';
 import Message from './components/Message';
 
-render(<App name='World' />, document.getElementById('root'));
+let Master = (<App name="world"><Message name="You">);
 
-render(<Message name='You' />, document.getElementById('footer'));
+render(Master, document.getElementById('root'));
+
+//render(<Message name='You' />, document.getElementById('footer'));
 
