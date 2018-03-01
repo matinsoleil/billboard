@@ -3,9 +3,9 @@ import { render } from 'react-dom';
 import App from './components/App';
 import Message from './components/Message';
 
-let Master = (<App name="world"><Message name="You">);
 
-render(Master, document.getElementById('root'));
+//render(){return [<App name="york" >,<Message name="help">]}
 
-//render(<Message name='You' />, document.getElementById('footer'));
+
+render(<div><App name="york" /><Message name='You' /></div>, document.getElementById('footer'));
 
