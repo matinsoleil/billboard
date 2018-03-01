@@ -1,17 +1,17 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
-
-const Copy = React.createClass({
-propTypes:{
-
-},
-getDefaultProps(){
-
-},
-render()
-{
- return(<div>AUHHHCH</div>);
+class Copy extends React.Component {
+  render() {
+    // This must be exactly one element or it will warn.
+    const children = this.props.children;
+    return (
+      <div>
+        {children}
+      </div>
+    );
+  }
 }
-});
 
-export default Copy;
+Copy.propTypes = {
+  children: PropTypes.element.isRequired
+};
