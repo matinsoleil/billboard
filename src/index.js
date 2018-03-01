@@ -3,10 +3,12 @@ import { render } from 'react-dom';
 import App from './components/App';
 import Message from './components/Message';
 
-var texto = React.createClass({
-  render: function(){ return (<a>Hola</a>);
-  }
+
+var component = Components[itemData['itemClass']]);
+return React.createElement(component, {
+    data: itemData,
+    key: itemData['id']
 });
 
-render(<div><App name="york" /><texto /><Message name='You' /></div>, document.getElementById('root'));
+render(<div><App name="york" /><Message name='You' /></div>, document.getElementById('root'));
 
