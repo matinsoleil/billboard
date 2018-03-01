@@ -7,6 +7,8 @@ function Warning({error}){
     return (<a>there are a {error}</a>);
 }
 
+Warning.propTypes = { error: PropTypes.string,};
+
 
 function Message({ name }) {
   return (
@@ -18,5 +20,6 @@ Message.propTypes = {
   name: PropTypes.string,
 };
 
+export default Warning;
 
 export default Message;
