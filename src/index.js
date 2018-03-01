@@ -9,5 +9,5 @@ class Hello extends React.Component {
   }
 }
 
-render(<div><App name="york" /><Message name='You' /></div>, document.getElementById('root'));
+render(<div><App name="york" /><Hello toWhat="World" /><Message name='You' /></div>, document.getElementById('root'));
 
