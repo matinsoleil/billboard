@@ -20,6 +20,5 @@ Message.propTypes = {
   name: PropTypes.string,
 };
 
-export default Warning;
-
+export Warning;
 export default Message;
