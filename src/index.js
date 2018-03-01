@@ -10,5 +10,5 @@ class Hello extends React.Component {
   }
 }
 
-render(<div><App name="york" /><Hello toWhat="World" /><Copy name="copy as you" /><Message name='You' /></div>, document.getElementById('root'));
+render(<div><App name="york" /><Hello toWhat="World" /><Copy name="von newman" /><Message name='You' /></div>, document.getElementById('root'));
 

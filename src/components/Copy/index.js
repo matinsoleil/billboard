@@ -14,4 +14,4 @@ Copy.propTypes = {
   name: PropTypes.string,
 };
 
-
+export default Copy;
