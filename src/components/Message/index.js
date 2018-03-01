@@ -13,10 +13,9 @@ function Message({ name }) {
   );
 };
 
+
 Message.propTypes = {
   name: PropTypes.string,
 };
-Warning.propTypes = {
-  error: PropTypes.string,
-};
+
 
