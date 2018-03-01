@@ -8,13 +8,13 @@ import Message from './components/Message';
 var All = React.createClass({
        render: function(){return(
                     <div>
-                     <App name={this.props.appname} />
-                    <Message name={this.props.messagename} />
+                     <App name="help" />
+                    <Message name="me" />
                      </div>
                );}
 });
 
-render(<All appname="Jack" messagename="help" />,document.getElementById('root'));
+render(<All />,document.getElementById('root'));
 
 
 //render(<App name='World' />, document.getElementById('root'));
