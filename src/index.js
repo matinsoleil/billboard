@@ -37,7 +37,8 @@ return http.get({
 
             // Data reception is done, do whatever with it!
             var parsed = JSON.parse(body);
-            callback('task');
+            var text="hello world";
+            return text;
         });
     });
 
