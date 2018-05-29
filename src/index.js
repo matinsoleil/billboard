@@ -27,7 +27,7 @@ return <div>Hello {this.props.toWhat}..{ this.getXML()}</div>;
 
 getXML(){
 
-return this.message;
+return "hello";
 
 
 }
