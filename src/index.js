@@ -17,7 +17,7 @@ class Hello extends React.Component {
 
 render() {
 this.text='';
-this.text=this.getXML();
+this.text= this.getXML();
 return <div>Hello {this.props.toWhat}..{this.text}</div>;
 }
 
@@ -26,24 +26,7 @@ getXML(){
 var http = require('http');
 
 
-return http.get({
-        host: 'orion-component.herokuapp.com',
-        path: '/'
-    }, function(response) {
-        // Continuously update stream with data
-        var body = '';
-        response.on('data', function(d) {
-            body += d;
-        });
-        response.on('end', function() {
-
-            // Data reception is done, do whatever with it!
-            var parsed = JSON.parse(body);
-            var text="hello world";
-            return text;
-        });
-    });
-
+return "hello world";
 
 
 }
