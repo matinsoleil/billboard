@@ -42,7 +42,7 @@ var simple = http.get({
         });
     });
 
-return "hello world";
+return simple;
 
 
 }
