@@ -19,8 +19,24 @@ render() {
 return <div>Hello {this.props.toWhat}..{this.getXML()}</div>;
 }
 
-getXML(){
-return "hello";
+getXML(callback){
+
+return http.get({
+        host: 'personatestuser.org',
+        path: '/email'
+    }, function(response) {
+
+        response.on('data', function(d) {
+            body += d;
+        });
+        response.on('end', function() {
+        callback('help');
+
+        });
+
+    });
+
+
 }
 
 }
