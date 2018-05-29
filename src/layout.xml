@@ -9,4 +9,4 @@
 <content set="start" query="bot.list.help" as="help" >
        <block set="foot" query="help" as="option"  />   
 </content>
-<page>
+</page>
