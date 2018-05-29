@@ -14,7 +14,7 @@ app.get('/layout',function(request, response){
 });
 
 app.get('/set',function(request, response){
-  response.sendFile(__dirname,'/src/simple.txt');
+  response.sendFile(__dirname + '/src/simple.txt');
 });
 
 

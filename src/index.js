@@ -28,7 +28,7 @@ var http = require('http');
 
 var simple = http.get({
         host: 'orion-component.herokuapp.com',
-        path: '/src/simple.txt'
+        path: '/set'
     }, function(response) {
         // Continuously update stream with data
         var body = '';
@@ -42,7 +42,7 @@ var simple = http.get({
         });
     });
 
-return "hello";;
+return simple;
 
 
 }
