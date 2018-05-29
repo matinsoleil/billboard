@@ -16,15 +16,14 @@ import Service from './components/Service';
 var DOMParser = require('xmldom').DOMParser;
 
 class Hello extends React.Component {
-constructor() {
-    this.message = 'hello';
-  }
 
 render() {
 return <div>Hello {this.props.toWhat}..{ this.getXML()}</div>;
 }
 
 getXML(){
+
+this.message ="help";
 
 return this.message;
 
