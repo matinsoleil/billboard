@@ -44,15 +44,18 @@ npm manifest:
       "css-loader": "^0.28.7",
       "enzyme-adapter-react-16": "^1.0.0",
       "express": "^4.15.5",
+      "http": "^0.0.0",
       "node-sass": "^4.5.3",
       "prop-types": "^15.6.0",
       "raf": "^3.3.2",
       "react": "^16.0.0",
-      "react-dom": "^16.3.2",
+      "react-dom": "^16.4.0",
       "react-redux": "^5.0.7",
+      "redux": "^4.0.0",
       "sass-loader": "^6.0.6",
       "style-loader": "^0.18.2",
-      "webpack": "^3.6.0"
+      "webpack": "^3.6.0",
+      "xmldom": "^0.1.27"
     },
     "devDependencies": {
       "babel-eslint": "^8.0.1",
@@ -3056,6 +3059,10 @@ Lockfile:
       jsprim "^1.2.2"
       sshpk "^1.7.0"
   
+  http@^0.0.0:
+    version "0.0.0"
+    resolved "https://registry.yarnpkg.com/http/-/http-0.0.0.tgz#86e6326d29c5d039de9fac584a45689f929f4f72"
+  
   https-browserify@0.0.1:
     version "0.0.1"
     resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
@@ -5061,9 +5068,9 @@ Lockfile:
     version "15.6.2"
     resolved "https://registry.yarnpkg.com/react-addons-test-utils/-/react-addons-test-utils-15.6.2.tgz#c12b6efdc2247c10da7b8770d185080a7b047156"
   
-  react-dom@^16.3.2:
-    version "16.3.2"
-    resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.3.2.tgz#cb90f107e09536d683d84ed5d4888e9640e0e4df"
+  react-dom@^16.4.0:
+    version "16.4.0"
+    resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.0.tgz#099f067dd5827ce36a29eaf9a6cdc7cbf6216b1e"
     dependencies:
       fbjs "^0.8.16"
       loose-envify "^1.1.0"
@@ -5180,6 +5187,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/reduce-function-call/-/reduce-function-call-1.0.2.tgz#5a200bf92e0e37751752fe45b0ab330fd4b6be99"
     dependencies:
       balanced-match "^0.4.2"
+  
+  redux@^4.0.0:
+    version "4.0.0"
+    resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.0.tgz#aa698a92b729315d22b34a0553d7e6533555cc03"
+    dependencies:
+      loose-envify "^1.1.0"
+      symbol-observable "^1.2.0"
   
   regenerate@^1.2.1:
     version "1.3.2"
@@ -5756,6 +5770,10 @@ Lockfile:
       sax "~1.2.1"
       whet.extend "~0.9.9"
   
+  symbol-observable@^1.2.0:
+    version "1.2.0"
+    resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
+  
   symbol-tree@^3.2.1:
     version "3.2.2"
     resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
@@ -6251,6 +6269,10 @@ Lockfile:
   xml-name-validator@^2.0.1:
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-2.0.1.tgz#4d8b8f1eccd3419aa362061becef515e1e559635"
+  
+  xmldom@^0.1.27:
+    version "0.1.27"
+    resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.1.27.tgz#d501f97b3bdb403af8ef9ecc20573187aadac0e9"
   
   xtend@^4.0.0, xtend@^4.0.1:
     version "4.0.1"
