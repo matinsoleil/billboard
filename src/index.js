@@ -17,8 +17,8 @@ class Hello extends React.Component {
 
 render() {
 this.text;
-sample=this.getXML(this.text);
-return <div>Hello {this.props.toWhat}..{sample}</div>;
+this.getXML(start);
+return <div>Hello {this.props.toWhat}..{start}</div>;
 }
 
 getXML(callback){
