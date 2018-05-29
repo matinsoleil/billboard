@@ -5,8 +5,6 @@ import App from './components/App';
 
 
 
-var http = require('http');
-
 var simple ="texto ............";
 
 
@@ -23,12 +21,30 @@ return <div>Hello {this.props.toWhat}..{ this.getXML()}</div>;
 
 getXML(){
 
-this.message ="help";
+var http = require('http');
 
-return this.message;
+
+return http.get({
+        host: 'orion-component.herokuapp.com',
+        path: '/'
+    }, function(response) {
+        // Continuously update stream with data
+        var body = '';
+        response.on('data', function(d) {
+            body += d;
+        });
+        response.on('end', function() {
+
+            // Data reception is done, do whatever with it!
+            var parsed = JSON.parse(body);
+            callback('task');
+        });
+    });
+
 
 
 }
+
 }
 
 render(<div><App name='World' /><span>SIMPLE</span><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
