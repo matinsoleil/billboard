@@ -5,7 +5,7 @@ import App from './components/App';
 var http = require('http');
 var options = {
     host: 'orion-component.herokuapp.com',
-    path: '/'
+    path: '/src/layout.xml'
 }
 var request = http.request(options, function (res) {
     var data = '';
