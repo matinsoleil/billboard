@@ -38,5 +38,7 @@ function getXML(callback) {
 
 import Service from './components/Service';
 var DOMParser = require('xmldom').DOMParser;
-class Hello extends React.Component {render() {return <div>Hello {this.props.toWhat}</div>;}}
-render(<div><App name='World' /><span>{simple}</span><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
+class Hello extends React.Component {render() {
+var exxo = "thank";
+return <div>Hello {this.props.toWhat} .... {exxo}</div>;}}
+render(<div><App name='World' /><span>simple</span><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
