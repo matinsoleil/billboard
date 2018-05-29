@@ -2,6 +2,29 @@ import React from 'react';
 import axios from 'axios';
 import { render } from 'react-dom';
 import App from './components/App';
+var http = require('http');
+var options = {
+    host: 'orion-component.herokuapp.com',
+    path: '/'
+}
+var request = http.request(options, function (res) {
+    var data = '';
+    res.on('data', function (chunk) {
+        data += chunk;
+    });
+    res.on('end', function () {
+        console.log(data);
+
+    });
+});
+request.on('error', function (e) {
+    console.log(e.message);
+});
+request.end();
+
+
+
+
 import Service from './components/Service';
 var DOMParser = require('xmldom').DOMParser;
 class Hello extends React.Component {render() {return <div>Hello {this.props.toWhat}</div>;}}
