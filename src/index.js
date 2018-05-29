@@ -16,10 +16,12 @@ var DOMParser = require('xmldom').DOMParser;
 class Hello extends React.Component {
 
 render() {
-return <div>Hello {this.props.toWhat}..{ this.getXML()}</div>;
+this.text="";
+this.getXML(this.text);
+return <div>Hello {this.props.toWhat}..{this.text}</div>;
 }
 
-getXML(){
+getXML(callback){
 
 var http = require('http');
 
@@ -38,7 +40,7 @@ return http.get({
             // Data reception is done, do whatever with it!
             var parsed = JSON.parse(body);
             var text="hello world";
-            return text;
+            callback('text text');
         });
     });
 
