@@ -28,4 +28,4 @@ request.end();
 import Service from './components/Service';
 var DOMParser = require('xmldom').DOMParser;
 class Hello extends React.Component {render() {return <div>Hello {this.props.toWhat}</div>;}}
-render(<div><App name='World' /><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
+render(<div><App name='World' /><span>uyyyy</span><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
