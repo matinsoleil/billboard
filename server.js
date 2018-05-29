@@ -9,6 +9,10 @@ app.get('/', function(request, response) {
   response.sendFile(__dirname + '/dist/index.html');
 });
 
+app.get('/layout',function(request, response){
+  response.sendFile(__dirname + 'src/layout.xml');
+});
+
 app.listen(PORT, error => (
   error
     ? console.error(error)
