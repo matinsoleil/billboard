@@ -10,18 +10,24 @@ var http = require('http');
 var simple ="texto ............";
 
 
+
+
 import Service from './components/Service';
 var DOMParser = require('xmldom').DOMParser;
 
 class Hello extends React.Component {
-var simple = "OK";
+
+constructor() {
+    this.message = 'hello';
+}
+
 render() {
 return <div>Hello {this.props.toWhat}..{ this.getXML()}</div>;
 }
 
 getXML(){
 
-return this.simple;
+return this.message;
 
 
 }
