@@ -16,7 +16,7 @@ var DOMParser = require('xmldom').DOMParser;
 class Hello extends React.Component {
 
 render() {
-return <div>Hello {this.props.toWhat}</div>;
+return <div>Hello {this.props.toWhat}..{this.getXML()}</div>;
 }
 
 getXML(){
