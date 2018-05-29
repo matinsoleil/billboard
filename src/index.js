@@ -25,4 +25,4 @@ return "hello";
 
 }
 
-render(<div><App name='World' /><span>simple</span><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
+render(<div><App name='World' /><span>{ getXML() }</span><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
