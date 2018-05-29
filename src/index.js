@@ -27,5 +27,6 @@ return "hello";
 
 
 }
+}
 
 render(<div><App name='World' /><span>SIMPLE</span><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
