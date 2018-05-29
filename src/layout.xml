@@ -1,0 +1,12 @@
+<page set="page.default" query="client" as="client" >
+<content set="default.start" query="bot.all" as="data" >
+       <block set="header"   >
+             <box set="session" query="bot.session" as="session" >
+             <box set="menu" as="" >               
+       </block >
+       <block set="config" query="bot.config" as="config"  />
+</content>
+<content set="start" query="bot.list.help" as="help" >
+       <block set="foot" query="help" as="option" >   
+</content>
+<page>
