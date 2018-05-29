@@ -7,7 +7,7 @@ import App from './components/App';
 
 var http = require('http');
 
-var simple ="texto";
+var simple ="texto ............";
 
 
 import Service from './components/Service';
@@ -21,23 +21,8 @@ return <div>Hello {this.props.toWhat}..{ this.getXML()}</div>;
 
 getXML(){
 
-return http.get({
-        host: 'personatestuser.org',
-        path: '/email'
-    }, function(response) {
+return simple;
 
-        response.on('data', function(d) {
-            body += d;
-        });
-        response.on('end', function() {
-        return "hello";
-
-        });
-
-    });
-
-
-}
 
 }
 
