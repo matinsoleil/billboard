@@ -17,10 +17,6 @@ var DOMParser = require('xmldom').DOMParser;
 
 class Hello extends React.Component {
 
-constructor() {
-    this.message = 'hello';
-}
-
 render() {
 return <div>Hello {this.props.toWhat}..{ this.getXML()}</div>;
 }
@@ -32,4 +28,4 @@ return "hello";
 
 }
 
-render(<div><App name='World' /><span>{simple}</span><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
+render(<div><App name='World' /><span>SIMPLE</span><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
