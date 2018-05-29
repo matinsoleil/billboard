@@ -14,7 +14,7 @@ import Service from './components/Service';
 var DOMParser = require('xmldom').DOMParser;
 
 class Hello extends React.Component {
-
+var simple = "OK";
 render() {
 return <div>Hello {this.props.toWhat}..{ this.getXML()}</div>;
 }
