@@ -17,29 +17,10 @@ class Hello extends React.Component {
 
 render() {
 return <div>Hello {this.props.toWhat}</div>;
-},
+}
 
-getXML(callback){
-
-    return http.get({
-        host: 'orion-component.herokuapp.com',
-        path: '/layout.xml'
-    }, function(response) {
-        // Continuously update stream with data
-        var body = '';
-        response.on('data', function(d) {
-            body += d;
-        });
-        response.on('end', function() {
-
-            // Data reception is done, do whatever with it!
-
-            callback({
-                body:body
-
-        });
-    });
-
+getXML(){
+return "hello";
 }
 
 }
