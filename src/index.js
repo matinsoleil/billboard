@@ -39,10 +39,10 @@ var simple = http.get({
 // Data received, let us parse it using JSON!
             body=body;
             var parsed = JSON.parse(body);
-            return parsed;
+            return body;
         });
     });
-console.log(parsed);
+console.log(simple);
 return 'simple';
 
 
