@@ -41,7 +41,7 @@ var simple = http.get({
             return body;
         });
     });
-print_r(simple);
+console.log(simple);
 return 'simple';
 
 
