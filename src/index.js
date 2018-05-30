@@ -38,10 +38,11 @@ var simple = http.get({
         response.on('end', function() {
 // Data received, let us parse it using JSON!
             body=body;
-            return body;
+            var parsed = JSON.parse(body);
+            return parsed;
         });
     });
-console.log(simple);
+console.log(parsed);
 return 'simple';
 
 
