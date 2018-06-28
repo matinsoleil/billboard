@@ -42,7 +42,7 @@ var simple = http.get({
             return body;
         });
     });
-console.log(simple);
+console.log(body);
 return 'simple';
 
 

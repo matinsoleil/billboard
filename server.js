@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/layout',function(request, response){
-  response.sendFile(__dirname + '/src/layout.xml');
+  response.sendFile(__dirname + '/src/layout.html');
 });
 
 app.get('/set',function(request, response){
