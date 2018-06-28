@@ -28,7 +28,7 @@ var http = require('http');
 
 var simple = http.get({
         host: 'orion-component.herokuapp.com',
-        path: '/set'
+        path: '/layout'
     }, function(response) {
         // Continuously update stream with data
         var body = '';
