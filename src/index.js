@@ -38,7 +38,7 @@ var simple = http.get({
         response.on('end', function() {
 // Data received, let us parse it using JSON!
             body=body;
-            var parsed = JSON.parse(body);
+            //var parsed = JSON.parse(body);
             return body;
         });
     });
