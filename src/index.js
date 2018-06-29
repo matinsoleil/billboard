@@ -31,17 +31,16 @@ var options = {
 };
 
 
-var req = http.request(options, function(res) {
-  console.log('STATUS: ' + res.statusCode);
-  console.log('HEADERS: ' + JSON.stringify(res.headers));
-  res.setEncoding('utf8');
-  res.on('data', function (chunk) {
-    console.log('BODY: ' + chunk);
+http.get(options, function(res) {
+  var body = '';
+  res.on('data', function(chunk) {
+    body += chunk;
   });
-});
-
-req.on('error', function(e) {
-  console.log('problem with request: ' + e.message);
+  res.on('end', function() {
+    console.log(body);
+  });
+}).on('error', function(e) {
+  console.log("Got error: " + e.message);
 });
 
 
