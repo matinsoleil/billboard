@@ -37,7 +37,6 @@ http.get(options, function(res) {
     body += chunk;
   });
   res.on('end', function() {
-    console.log(body);
   });
 }).on('error', function(e) {
   console.log("Got error: " + e.message);
