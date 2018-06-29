@@ -30,9 +30,9 @@ var options = {
   path: '/layout'
 };
 
+var body='';
 
 http.get(options, function(res) {
-  var body = '';
   res.on('data', function(chunk) {
     body += chunk;
   });
@@ -41,14 +41,10 @@ http.get(options, function(res) {
   });
 }).on('error', function(e) {
   console.log("Got error: " + e.message);
-}).then(function(res){
-
-   console.log(body);
-
 });
 
 
-
+console.log(body);
 
 return "help";
 }
