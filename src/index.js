@@ -24,7 +24,7 @@ return <div>Hello {this.props.toWhat}..{this.text}</div>;
 getXML(){
 
 var http = require('http');
-
+var body;
 
 var simple = http.get({
         host: 'orion-component.herokuapp.com',
@@ -39,13 +39,10 @@ var simple = http.get({
 // Data received, let us parse it using JSON!
             body=body;
             //var parsed = JSON.parse(body);
-            console.log(body);
-            return body;
         });
     });
 console.log(simple);
 return 'simple';
-
 
 }
 
