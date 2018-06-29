@@ -41,7 +41,12 @@ http.get(options, function(res) {
   });
 }).on('error', function(e) {
   console.log("Got error: " + e.message);
+}).then(function(res){
+
+   console.log(body);
+
 });
+
 
 
 
