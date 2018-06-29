@@ -31,7 +31,7 @@ var url = '/layout',
 
 data=this.getContent(url);
 
-console.log(data);
+data.then((html)=>console.log(html));
 
 return "help";
 }
