@@ -26,7 +26,7 @@ getXML(){
 var http = require('http');
 
 
-var url = 'orion-component.herokuapp.com',
+var url = '/layout',
 
 
 data=this.getContent(url);
