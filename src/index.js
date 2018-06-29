@@ -28,10 +28,14 @@ var http = require('http');
 
 var url = '/layout',
 
+var kickoff;
 
 data=this.getContent(url);
 
-data.then((html)=>console.log(html));
+data.then((html)=>kickoff);
+
+console.log(kickoff);
+
 
 return "help";
 }
