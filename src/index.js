@@ -37,16 +37,22 @@ body=http.get(options, function(res) {
     body += chunk;
   });
   res.on('end', function() {
-    return body;
+    callback(body);
   });
 
 }).on('error', function(e) {
   console.log("Got error: " + e.message);
 });
 
-
+console.log(this.data);
 
 return "help";
+}
+
+callback(body){
+
+this.data = body;
+
 }
 
 }
