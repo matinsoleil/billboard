@@ -37,14 +37,14 @@ body=http.get(options, function(res) {
     body += chunk;
   });
   res.on('end', function() {
+    return body;
   });
-  return body;
+
 }).on('error', function(e) {
   console.log("Got error: " + e.message);
 });
 
 
-console.log(body);
 
 return "help";
 }
