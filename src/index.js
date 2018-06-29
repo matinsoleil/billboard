@@ -27,7 +27,6 @@ var http = require('http');
 
 var options = {
   host:  'orion-component.herokuapp.com',
-  port: 80,
   path: '/layout'
 };
 
