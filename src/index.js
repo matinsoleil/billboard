@@ -24,22 +24,28 @@ return <div>Hello {this.props.toWhat}..{this.text}</div>;
 getXML(){
 
 var http = require('http');
-var body;
 
-http.get({ host: 'orion-component.herokuapp.com', path: '/layout' }, function(response) {
-        // Continuously update stream with data
-        var body = '';
-        response.on('data', function(d) {
-            body += d;
-        });
-        response.on('end', function() {
-// Data received, let us parse it using JSON!
-            body=body;
-            //var parsed = JSON.parse(body);
-        });
-    });
-         console.log(body);
-   }
+
+var url = 'orion-component.herokuapp.com/layout';
+
+
+const httpGet = url => {
+  return new Promise((resolve, reject) => {
+    http.get(url, res => {
+      res.setEncoding('utf8');
+      let body = '';
+      res.on('data', chunk => body += chunk);
+      res.on('end', () => resolve(body));
+    }).on('error', reject);
+  });
+};
+
+var body = await httpGet(url);
+
+console.log(body);
+
+return "help";
+
 }
 
 render(<div><App name='World' /><span>SIMPLE</span><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
