@@ -25,10 +25,26 @@ getXML(){
 
 var http = require('http');
 
-var url = 'orion-component.herokuapp.com/layout';
+var options = {
+  host:  'orion-component.herokuapp.com',
+  port: 80,
+  path: '/layout'
+};
 
+http.get(options, function(res) {
+  var body = '';
+  res.on('data', function(chunk) {
+    body += chunk;
+  });
+  res.on('end', function() {
+    console.log(body);
+  });
+}).on('error', function(e) {
+  console.log("Got error: " + e.message);
+});
 
 return "help";
+
 
         }
 
