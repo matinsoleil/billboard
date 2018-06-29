@@ -26,10 +26,7 @@ getXML(){
 var http = require('http');
 var body;
 
-var simple = http.get({
-        host: 'orion-component.herokuapp.com',
-        path: '/layout'
-    }, function(response) {
+http.get({ host: 'orion-component.herokuapp.com', path: '/layout' }, function(response) {
         // Continuously update stream with data
         var body = '';
         response.on('data', function(d) {
@@ -41,11 +38,8 @@ var simple = http.get({
             //var parsed = JSON.parse(body);
         });
     });
-console.log(simple);
-return 'simple';
-
-}
-
+         console.log(body);
+   }
 }
 
 render(<div><App name='World' /><span>SIMPLE</span><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
