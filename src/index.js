@@ -28,7 +28,6 @@ var http = require('http');
 
 var url = '/layout',
 
-var kickoff;
 
 data=this.getContent(url);
 
