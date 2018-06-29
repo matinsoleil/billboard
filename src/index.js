@@ -37,7 +37,7 @@ body=http.get(options, function(res) {
     body += chunk;
   });
   res.on('end', function() {
-    callback(body);
+    this.callback(body);
   });
 
 }).on('error', function(e) {
