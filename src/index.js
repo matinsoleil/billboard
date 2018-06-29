@@ -32,12 +32,13 @@ var options = {
 
 var body='';
 
-http.get(options, function(res) {
+body=http.get(options, function(res) {
   res.on('data', function(chunk) {
     body += chunk;
   });
   res.on('end', function() {
   });
+  return body;
 }).on('error', function(e) {
   console.log("Got error: " + e.message);
 });
