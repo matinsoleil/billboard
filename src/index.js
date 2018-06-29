@@ -32,11 +32,11 @@ var kickoff;
 
 data=this.getContent(url);
 
-data.then((html)=>kickoff);
+data.then(function(html) {
 
-console.log(kickoff);
+    console.log(html)
 
-
+});
 return "help";
 }
 
