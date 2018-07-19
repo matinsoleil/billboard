@@ -5,7 +5,7 @@ import App from './components/App';
 
 
 
-var simple ="texto ............";
+var simple ="texto";
 
 
 
@@ -69,4 +69,4 @@ return new Promise((resolve, reject) => {
 
 }
 
-render(<div><App name='World' /><span>SIMPLE</span><Hello toWhat='help' /><Service name='wilfrido' /></div>, document.getElementById('root'));
+render(<div><App name='World' /><span>SIMPLE</span><Hello toWhat='help' /><Service name='Orion' /></div>, document.getElementById('root'));
