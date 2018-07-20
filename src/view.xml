@@ -1,6 +1,6 @@
-<section>
+<section each:store="store.id.section.start" as:store="start" key:store="group" out:default="start"  >
    <group>
+     <var in:default="start" out:default="start" >start.name</var>
+     <var in:default="start" out:default="start" >start.value</var>
    </group>
-   <group>
-   <group>
 </section>

@@ -24,13 +24,8 @@ return <div>Hello {this.props.toWhat}..{this.text}</div>;
 getXML(){
 
 var http = require('http');
-
-
 var url = '/layout',
-
-
 data=this.getContent(url);
-
 data.then(function(html){
 
   console.log(html);
@@ -68,5 +63,7 @@ return new Promise((resolve, reject) => {
 
 
 }
+
+
 
 render(<div><App name='World' /><span>SIMPLE</span><Hello toWhat='help' /><Service name='Orion' /></div>, document.getElementById('root'));
