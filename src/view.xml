@@ -1,6 +1,6 @@
-<section each:store="store.id.section.start" as:store="start" key:store="group" out:default="start"  >
+<section data:store="store.billboardband" as:store="set" key:store="group"  >
    <group>
-     <var in:default="start" out:default="start" >start.name</var>
-     <var in:default="start" out:default="start" >start.value</var>
+     <title>the bands</title>
+     <card data:band="card.billboardband" as:band="band" >
    </group>
 </section>

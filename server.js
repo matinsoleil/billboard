@@ -5,6 +5,15 @@ const PORT = process.env.PORT || 8050;
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
+app.get(/^\/(api|rest)\/.+$/,function(request,response){
+
+var fullUrl = request.protocol + '://' + request.get('host') + request.originalUrl;
+   var arr3 = [ 'cat', 'rat', 'bat' ];
+   response.type('json');
+   response.json(arr3);
+});
+
+
 app.get('/', function(request, response) {
   response.sendFile(__dirname + '/dist/index.html');
 });
