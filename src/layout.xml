@@ -1,3 +1,75 @@
-<view name:default="start" in:default=""  model:default="model.default"  each:default="system.id.section.default" as:default="section" key:default="section" out:default="section" >
-   <section src="src.section" >
+<layout>
+<view>
+
+<section>
+
+<shortcut src:default="src.id.login" text:default="text.id.start" >
+<shortcut src:default="src.id.register" text:default="text.id.register" >
+
+</section>
+
+<section>
+
+<status value="user.id.status"  name="user.id.name" image="image.id.avatar"  src="src.id.account"  visiblity="session.id.status" />
+
+
+</section>
+
+
+
+<view/>
+<section>
+
+<search suggest:default="">
+<button>
+
+</section>
+
+<view>
+
+<card src="src.id.view" name="card.id.name" ></card>
+
 </view>
+<view>
+<browse  each:default="list.id.howto"  as:default="option"  key:default="text" >
+<text src="option.id.src"  >option.id.name</text>
+</browse>,
+</view>
+</layout>
+
+
+
+
+
+<brose>
+<browse/>
+
+
+
+<group>
+<group/>
+
+
+<button />
+<activity />
+<message />
+<modal />
+<quick />
+<grid />
+<header />
+<controls />
+<select />
+<collection /> 
+<card />
+<date />
+<section />
+<input />
+<text />
+<slider />
+<search />
+<edit />
+<microedit />
+<track />
+<share />
+<satatus / >
+<shortcut />

@@ -1,9 +1,11 @@
-<view type="grid" data:store="store.billboardband.list" as:store="list" key:store="section"  >
-   <section input:store="list" >
-     <view input:default="list" out:default="list" >
+<view style="" >
+</view>
+<view type="grid" each:store="store.entity.list" as:store="list" key:store="section"  >
+   <section >
+     <view input:default="list" >
      <label>list.name</label>
-     <button type="image" >list.src</button>
-     <button type="action" >list.contact</button>    
+     <button type:default="image" src:default="list.image.src" />
+     <button type:default="action" action:default="list.action.model" >list.action.txt</button>    
      </view>
    </section>
 </view>
