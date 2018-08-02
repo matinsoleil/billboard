@@ -6,7 +6,7 @@ import 'src/assets/stylesheets/base.scss';
 
 class Service extends React.Component {
  render(){
- return(<h1>Hello, {this.props.name}</h1>);
+ return(<h1 name={this.props.attribute} >Hijo, {this.props.name}</h1>);
  }
 
 }
@@ -14,6 +14,7 @@ class Service extends React.Component {
 
 Service.propTypes = {
   name: PropTypes.string,
+  attribute: PropTypes.string
 };
 
 export default Service;

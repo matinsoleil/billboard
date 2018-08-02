@@ -7,10 +7,9 @@ import App from './components/App';
 
 var simple ="texto";
 
-
-
-
 import Service from './components/Service';
+
+
 var DOMParser = require('xmldom').DOMParser;
 
 class Hello extends React.Component {
@@ -18,7 +17,7 @@ class Hello extends React.Component {
 render() {
 this.text='';
 this.text= this.getXML();
-return <div>Hello {this.props.toWhat}..{this.text}</div>;
+return <div>MasterCombo {this.props.toWhat}..{this.text}</div>;
 }
 
 getXML(){
@@ -65,5 +64,4 @@ return new Promise((resolve, reject) => {
 }
 
 
-
-render(<div><App name='World' /><span>SIMPLE</span><Hello toWhat='help' /><Service name='Orion' /></div>, document.getElementById('root'));
+render(<div><App name='World' /><span>SIMPLE</span><Hello toWhat='start' /><Service name='Orion' attribute='Stars' /></div>, document.getElementById('root'));
