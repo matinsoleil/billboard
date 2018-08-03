@@ -63,5 +63,6 @@ return new Promise((resolve, reject) => {
 
 }
 
+var task = 1;
 
-render(<div><App name='World' /><span>SIMPLE</span><Hello toWhat='start' /><Service name='Orion' attribute='Stars' /></div>, document.getElementById('root'));
+render(<div><App name='World' /><span>SIMPLE{task}</span><Hello toWhat='start' /><Service name='Orion' attribute='Stars' /></div>, document.getElementById('root'));
