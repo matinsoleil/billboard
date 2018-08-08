@@ -1,11 +1,23 @@
-<view style="" >
-</view>
-<view type="grid" each:store="store.entity.list" as:store="list" key:store="section"  >
-   <section >
-     <view input:default="list" >
-     <label>list.name</label>
-     <button type:default="image" src:default="list.image.src" />
-     <button type:default="action" action:default="list.action.model" >list.action.txt</button>    
-     </view>
-   </section>
-</view>
+<entity name="store" >
+      <attribute name="user">                                  
+             <value name="name" action="" type="text" value="Pleed"> 
+              <entity name="Pleed" >
+              <attribute name="address" >                    
+                                <value action=""  type="text"  name="street" value="Amores" />
+                                <value action=""  type="text"  name="number" value="300" />
+                                <value action=""  type="text"  name="neighborhood" value="Del Valle" />
+               </attribute>
+               <attribute name="password" >
+                        <value action="" type="password" name="keyword" value="MasterCombo" />
+               </attribute>
+               <attribute name="billing" >
+                                <value action="" type="select" name="service" selected="1"  value="mastercard"  />
+                                <value action="" type="select" name="service" selected="0"  value="visa" />
+                                <value action="" type="select" name="service" selected="0"  value="american express" />           
+               </attribute>  
+             </entity>
+             </value>   
+      </attribute>
+</entity>
+
+
